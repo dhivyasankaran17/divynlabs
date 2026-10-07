@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  /* Accent: deep indigo. Contrast vs white is 10.4:1 for #3730A3. */
+  --color-accent: #3730a3;
+  --color-accent-hover: #312e81;
+  --color-accent-soft: #eef2ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
