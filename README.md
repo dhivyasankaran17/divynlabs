@@ -25,7 +25,7 @@ npm run preview    # serve the production build locally
    - Framework preset: **None** (or Vite)
    - Build command: `npm run build`
    - Build output directory: `dist`
-   - Environment variable (optional): `NODE_VERSION=22`
+   - Node version: set by `.node-version` (22). You can also set the `NODE_VERSION` environment variable.
 3. Deploy.
 
 `public/_redirects` contains `/* /index.html 200`, so deep links like `/privacy` and `/terms` load the app instead of returning 404.
