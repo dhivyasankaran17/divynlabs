@@ -51,7 +51,6 @@ export default function About() {
             </li>
           ))}
         </ol>
-        {/* TODO: confirm location wording (edit `location` in src/data/site.ts). */}
         <p className="mt-12 text-slate-700">{site.location}</p>
       </Section>
 

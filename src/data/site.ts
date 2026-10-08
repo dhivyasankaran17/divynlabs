@@ -6,10 +6,11 @@ export const site = {
   domain: 'divynlabs.com',
   url: 'https://divynlabs.com',
   chorrosUrl: 'https://chorrosapp.com',
-  // TODO: confirm wording for the company location line on /about.
+  chorrosAppStoreUrl: 'https://apps.apple.com/us/app/chorros-kids-chores-tracker/id6785687949',
+  h2oMedAppStoreUrl: 'https://apps.apple.com/us/app/h2omed/id6806398583',
   location: 'Based in the United States.',
-  // TODO: add the state that governs the Terms of Use (e.g. "Delaware").
-  governingLawState: '[TODO: state]',
+  // State whose law governs the Terms of Use.
+  governingLawState: 'Virginia',
   // Effective date shown on the Privacy Policy and Terms of Use.
   // TODO: update this when the policies are reviewed and published.
   policyEffectiveDate: 'October 7, 2026',

@@ -40,21 +40,17 @@ npm run preview    # serve the production build locally
 
 | What | File |
 | --- | --- |
-| Company name, email, domain, Chorros URL, location line, governing-law state, policy date | `src/data/site.ts` |
-| App cards: status, links, H2O Med toggle | `src/data/apps.ts` |
+| Company name, email, domain, app URLs, location line, governing-law state, policy date | `src/data/site.ts` |
+| App cards: status, links, H2OMed toggle | `src/data/apps.ts` |
 | Services and "What's included" | `src/data/services.ts` |
-| Logo placeholder | `src/components/Logo.tsx` |
+| Logo mark and favicons | `public/logo-mark.png`, `public/favicon-32.png`, `public/apple-touch-icon.png` (shown via `src/components/Logo.tsx`) |
 | Page title and meta description | `usePageMeta(...)` at the top of each file in `src/pages/` |
 
 ## TODO list
 
 All of these are also marked `TODO` in the source.
 
-- [ ] **Logo**: replace the placeholder in `src/components/Logo.tsx` and `public/favicon.svg` (see the note in `index.html`).
-- [ ] **Chorros store links**: add the App Store and Google Play URLs in `src/data/apps.ts`. Until then they show as disabled buttons.
-- [ ] **H2O Med**: set `SHOW_H2O_MED = true` in `src/data/apps.ts` to show the card. When it's live, change its status to `'Available'` and add the App Store link.
-- [ ] **About page location**: confirm "Based in the United States." (`location` in `src/data/site.ts`).
-- [ ] **Terms governing law**: set `governingLawState` in `src/data/site.ts`.
+- [ ] **Chorros Google Play link**: add the URL in `src/data/apps.ts`. Until then it shows as a disabled button.
 - [ ] **Privacy Policy and Terms**: both are drafts. Review with a qualified professional, then remove the DRAFT banners (`src/components/LegalPage.tsx`) and update `policyEffectiveDate` in `src/data/site.ts`.
 - [ ] **Contact page**: add a phone number or mailing address later if desired (`src/pages/Contact.tsx`).
 - [ ] **Third service card**: the brief lists two services but asks for three cards on Home, so the third card shows the "What's included" list. Confirm, or add a third service (`src/components/ServicesGrid.tsx`).

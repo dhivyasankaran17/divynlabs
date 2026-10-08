@@ -21,8 +21,8 @@ export type App = {
   featured?: boolean
 }
 
-// TODO: set to true to show the H2O Med card on /apps.
-export const SHOW_H2O_MED = false
+// Set to false to hide the H2OMed card on /apps.
+export const SHOW_H2O_MED = true
 
 const chorros: App = {
   id: 'chorros',
@@ -34,8 +34,7 @@ const chorros: App = {
   featured: true,
   links: [
     { label: 'Visit Chorros', href: site.chorrosUrl, primary: true },
-    // TODO: add the Chorros App Store URL.
-    { label: 'App Store', href: null },
+    { label: 'App Store', href: site.chorrosAppStoreUrl },
     // TODO: add the Chorros Google Play URL.
     { label: 'Google Play', href: null },
   ],
@@ -58,14 +57,13 @@ const nextApp: App = {
 
 const h2oMed: App = {
   id: 'h2o-med',
-  name: 'H2O Med',
+  name: 'H2OMed',
   description: 'A water intake and medication reminder app for iPhone and iPad.',
   platforms: ['iPhone', 'iPad'],
-  // TODO: change to 'Available' and add the App Store link once live.
-  status: 'Coming soon',
-  links: [],
+  status: 'Available',
+  links: [{ label: 'App Store', href: site.h2oMedAppStoreUrl, primary: true }],
 }
 
-export const apps: App[] = [chorros, nextApp, ...(SHOW_H2O_MED ? [h2oMed] : [])]
+export const apps: App[] = [chorros, ...(SHOW_H2O_MED ? [h2oMed] : []), nextApp]
 
 export const featuredApps = apps.filter((app) => app.featured)

@@ -65,10 +65,9 @@ export default function Terms() {
 
       <section>
         <h2>Governing law</h2>
-        {/* TODO: set the governing state in src/data/site.ts (governingLawState). */}
         <p>
-          These terms are governed by the laws of the United States and the State of {site.governingLawState}, without
-          regard to conflict of law rules.
+          These terms are governed by the laws of the United States and of {site.governingLawState}, without regard to
+          conflict of law rules.
         </p>
       </section>
 
